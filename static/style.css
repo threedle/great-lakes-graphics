@@ -111,6 +111,9 @@ p code {
   margin-left: auto;
   margin-right: auto;
 }
+.rounded-corner {
+  border-radius: 15px;
+}
 .summary-img {
   width: 100%;
   display: block;
