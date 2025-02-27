@@ -1,21 +1,167 @@
-/* CSS Document */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+.noto-sans-variable {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 375;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
 
 body {
-  font-family: 'Open-Sans', sans-serif;
-  font-weight: 300;
   background-color: #fff;
 }
-.content {
-  width: 1000px;
-  padding: 25px 50px;
-  margin: 25px auto;
+
+h1 {
+  text-align: center;
+}
+
+h1,
+strong {
+  font-weight: 600;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+}
+
+h2 {
+  font-weight: 300;
+  color: #0295A3;
+}
+
+p {
+  /* line-height: 25px; */
+  text-align: justify;
+}
+
+/* p code {
+  display: inline;
+  padding: 0;
+  margin: 0;
+} */
+
+nav {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav>* {
+  flex: auto;
+  text-align: center;
+}
+
+nav.header {
+  a {
+    background-color: #e8fdff;
+    margin: 0 4px;
+    padding: 2px 2px;
+    border-radius: 8px;
+  }
+}
+
+nav.organizers {
+  img {
+    width: 128px;
+  }
+
+  h3 {
+    margin: 0 auto;
+    max-width: 128px;
+    font-size: 1em;
+  }
+}
+
+
+section {
+  padding: 25px 45px;
+  margin: 16px auto;
   background-color: white;
   box-shadow: 0px 0px 10px #999;
   border-radius: 15px;
-  font-family: "Google Sans";
+  transition: width 0.1s ease-out;
 }
-.contentblock {
+
+@media (min-width: 240px) {
+  section {
+    width: calc(92.5vw - 30px);
+    padding: 20px 20px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+}
+
+@media (min-width: 640px) {
+  section {
+    width: calc(65vw + 80px - 30px);
+    padding: 25px 25px;
+  }
+
+  h1 {
+    font-size: 1.9em;
+  }
+}
+
+@media (min-width: 900px) {
+  section {
+    width: calc(47.5vw + 190px - 30px);
+    padding: 30px 30px
+  }
+
+  h1 {
+    font-size: 2.375em;
+  }
+}
+
+@media (min-width: 1281px) {
+  section {
+    width: calc(40vw + 280px - 30px);
+    padding: 35px 35px
+  }
+
+  h1 {
+    font-size: 2.65em;
+  }
+}
+
+.map {
+  width: 100%;
+}
+
+
+.bigimage {
+  width: calc(min(100%, 360px));
+}
+
+.block-centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rounded-corner {
+  border-radius: 15px;
+}
+
+a,
+a:visited {
+  color: #224b8d;
+  font-weight: 300;
+}
+
+
+/* .contentblock {
   width: 950px;
   margin: 0 auto;
   padding: 0;
@@ -27,25 +173,17 @@ body {
   vertical-align: top;
   box-shadow: 0px 0px 10px #999;
   border-radius: 15px;
-}
-a, a:visited {
-  color: #224b8d;
-  font-weight: 300;
-}
-#authors {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 20px;
-}
-#conference {
+} */
+
+/* #conference {
   text-align: center;
   margin-bottom: 20px;
   font-style: italic;
-}
-#authors a {
+} */
+/* #authors a {
   margin: 0 10px;
-}
-h1 {
+} */
+/* h1 {
   text-align: center;
   font-size: 35px;
   font-weight: 300;
@@ -53,22 +191,14 @@ h1 {
 h2 {
   font-size: 30px;
   font-weight: 300;
-}
-code {
+} */
+/* code {
   display: block;
   padding: 10px;
   margin: 10px 10px;
-}
-p {
-  line-height: 25px;
-  text-align: justify;
-}
-p code {
-  display: inline;
-  padding: 0;
-  margin: 0;
-}
-#teasers {
+} */
+
+/* #teasers {
   margin: 0 auto;
 }
 #teasers td {
@@ -106,15 +236,9 @@ p code {
   margin-left: auto;
   margin-right: auto;
 }
-.teaser-gif {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.rounded-corner {
-  border-radius: 15px;
-}
-.summary-img {
+*/
+
+/* .summary-img {
   width: 100%;
   display: block;
   margin-left: auto;
@@ -152,4 +276,4 @@ p code {
 }
 .spacertd {
   width: 40px;
-}
+} */
