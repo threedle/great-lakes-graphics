@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+  --bold-weight: 600;
+}
+
 .noto-sans-variable {
   font-family: "Noto Sans", sans-serif;
   font-optical-sizing: auto;
@@ -19,7 +23,7 @@ h1 {
 
 h1,
 strong {
-  font-weight: 600;
+  font-weight: var(--bold-weight);
 }
 
 h1,
@@ -33,13 +37,13 @@ h2 {
 }
 
 p {
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 nav {
   display: block;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -53,10 +57,16 @@ nav>* {
 
 nav.header {
   a {
-    background-color: #e8fdff;
+    background-color: #e8efef;
     margin: 0 4px;
     padding: 2px 2px;
     border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.1s;
+  }
+
+  a:hover {
+    background-color: #e8fdff;
   }
 }
 
@@ -68,7 +78,7 @@ nav.organizers {
   h3 {
     margin: 0 auto;
     max-width: 128px;
-    font-size: 1em;
+    font-size: 1rem;
   }
 }
 
@@ -89,7 +99,7 @@ section {
   }
 
   h1 {
-    font-size: 1.8em;
+    font-size: 1.8rem;
   }
 }
 
@@ -100,7 +110,7 @@ section {
   }
 
   h1 {
-    font-size: 1.9em;
+    font-size: 1.9rem;
   }
 }
 
@@ -111,7 +121,7 @@ section {
   }
 
   h1 {
-    font-size: 2.375em;
+    font-size: 2.375rem;
   }
 }
 
@@ -122,7 +132,7 @@ section {
   }
 
   h1 {
-    font-size: 2.65em;
+    font-size: 2.65rem;
   }
 }
 
@@ -148,5 +158,53 @@ section {
 a,
 a:visited {
   color: #224b8d;
-  font-weight: 300;
+  font-weight: 500;
+}
+
+/* schedule  */
+table.schedule {
+  font-style: italic;
+  width: 100%;
+  border-collapse: collapse;
+
+  tr>td {
+    border-bottom: 1px solid black;
+    padding: 4px 0;
+  }
+
+  tr>.sch-time {
+    width: 5em;
+    vertical-align: top;
+  }
+
+  details>summary {
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.1s;
+  }
+
+  details>summary:hover {
+    background-color: #e8efef;
+  }
+
+  .sch-talks {
+    font-style: normal;
+    margin: 12px 12px;
+
+    .sch-talk {
+      padding: 4px 4px;
+    }
+
+    .sch-talk:nth-child(odd) {
+      background-color: #e8efef;
+    }
+
+    .sch-talk:nth-child(even) {
+      background-color: #fcfefe;
+    }
+
+    .sch-talk-title {
+      font-weight: var(--bold-weight);
+    }
+  }
 }
