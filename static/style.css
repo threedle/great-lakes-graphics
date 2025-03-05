@@ -22,6 +22,7 @@ h1 {
 }
 
 h1,
+h2,
 strong {
   font-weight: var(--bold-weight);
 }
@@ -32,13 +33,9 @@ h2 {
 }
 
 h2 {
-  font-weight: 300;
   color: #0295A3;
 }
 
-p {
-  /* text-align: justify; */
-}
 
 nav {
   display: block;
