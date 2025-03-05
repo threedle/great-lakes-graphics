@@ -57,7 +57,7 @@ nav>* {
 
 nav.header {
   a {
-    background-color: #e8efef;
+    background-color: #f0f8f8;
     margin: 0 4px;
     padding: 2px 2px;
     border-radius: 8px;
@@ -145,6 +145,10 @@ section {
   width: calc(min(100%, 360px));
 }
 
+.bannerimage {
+  width: calc(min(100%, 520px));
+}
+
 .block-centered {
   display: block;
   margin-left: auto;
@@ -157,7 +161,7 @@ section {
 
 a,
 a:visited {
-  color: #224b8d;
+  color: #028a97;
   font-weight: 500;
 }
 
